@@ -1,0 +1,8 @@
+let score = "33";
+
+console.log(typeof score);
+console.log(typeof (score));
+
+let valueInNumber = Number(score); //for conversion you have to write first latter capital
+console.log(typeof (valueInNumber));
+
