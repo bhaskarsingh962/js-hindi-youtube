@@ -1,8 +1,21 @@
-let score = "33";
+let score = "33jdj"; 
 
 console.log(typeof score);
 console.log(typeof (score));
 
 let valueInNumber = Number(score); //for conversion you have to write first latter capital
+//it will convert value just in number however that is NAN value ..
 console.log(typeof (valueInNumber));
 
+//conersion 
+//"33" => 33
+// "33abd" = NaN
+//true = 1
+//false = 0
+//"" = true
+
+
+let isLogedIn = 1;
+
+let isConversion = Number(isLogedIn);
+console.log(isConversion);
