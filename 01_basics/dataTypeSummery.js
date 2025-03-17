@@ -34,7 +34,7 @@ const bigNumber = 24872397528375982837n; //
 const heros = ["saktiman" , "natraj" ,"doga"]; //array
 
 let obj = {
-    name : bhaskar, // data type can be whatever or multiple inside a object
+    name : "bhaskar", // data type can be whatever or multiple inside a object
     rollNo : 97,
     marks :  92
 }
@@ -56,4 +56,29 @@ const myFunction = function (){
 
 
 
-  //non premitive data type = function    
+  //non premitive data type = function
+  
+  
+
+  //*********************************************memory************** */
+
+  //stack (primitive) , heap memory(non - premitive)
+
+  let myYoutubename = "bhaskarsingh"
+
+
+  //when you use premitive data types that stores in stack memory but non-premitve data types store in heap
+  //function name or obj name refer to content in heap
+
+
+  let userOne = {
+    email : "bahhskarsingh9164@gmail.com",
+    upi : "user123"
+  }
+
+  let userTwo = userOne;
+  userTwo.email = "basu234";
+
+//here pass by reference working
+  console.log(userOne.email);
+  console.log(userTwo.email);
