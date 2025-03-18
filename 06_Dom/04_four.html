@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code  </title>
+</head>
+<body style="background-color: #212121; color: #fff">
+  <ul class="language">
+     <li>javaScript</li>
+  </ul>
+</body>
+<script>
+    
+ //funtion to add new language
+ function addLang(lang){
+   let newEle = document.createElement('li');
+   newEle.innerHTML = `${lang}`;
+   document.querySelector('.language').appendChild(newEle);
+ }
+
+ addLang("python");
+
+//optimize way to add somthing becouse in previos operation it needs to traverse complete tree which is time taken process
+
+function addoptimize(lang){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(lang));
+    document.querySelector('.language').appendChild(li);
+}
+
+addoptimize("golang");
+
+
+//replace or edit with anyone 
+
+const secondLang = document.querySelector();
+let newLi = document.createElement('li:nth-child(2)');
+newLi.textContent = "Mojo";
+secondLang.replaceWith(newLi);
+
+//remove 
+const lastLang = document.querySelector("li:last-child");
+langName.remove();
+
+
+</script>
+</html>

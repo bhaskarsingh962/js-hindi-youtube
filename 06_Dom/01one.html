@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 class="heading">Dom learning on chai aur code</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam inventore 
+            voluptate repudiandae beatae dolorum eveniet ducimus, magni autem modi, 
+            ad nostrum earum et. Eum maiores atque dicta quos blanditiis a?</p>
+
+            <ul>
+                <li class="list">one</li>
+                <li class="list">two</li> 
+                <li class="list">three</li>
+                <li class="list">four</li>
+            </ul>
+    </div>
+</body>
+</html>
+
+
+//window -> document -> html ->(1) - head
+//                                (2)- body
+//there two types of html
+//1-head
+//2-body
+
+//further head have
+//(1) - title - type -> text node
+//(2) - meta - type -> attribute
+
+//body types
+//(1) - body -> div -> h1
+//                  -> p 
+
+
+//diff btw innerText and innerContent 
+//innerText show only visible text but innerContent also show those text also which are hidden
+//innerHTML  - show complete html and tags also
+
+
+//document.querySelector('h1') -> select fist h1 tag.
+//document.querySelector(#title') -> select by id
+//document.querySelector('.heading') -> select by class;
+
+
+//if you want to select all the all the query 
+
+//document.querySelectorAll('li'); //will select all the list item 
+//while using all in that case you need to do index also in which element you want to change
+
+
+//const qsel = document.querySelectorAll('li'); //now if you want to apply style
+//qsel[0].style.color = "green"  //you need to give index also becouse it will treat as a node list 
+
+
+//convert any list to array to apply forEach or map opertion
+//array.from(tempClassList);
