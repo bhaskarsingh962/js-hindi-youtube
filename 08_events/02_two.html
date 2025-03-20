@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <h1>Chai Aur Code</h1>
+   <button id="stop">Stop</button>
+</body>
+
+<script>
+  // setTimeout(function(){
+  //   console.log("bhaskar");
+  // },3000) //wait for 3 second and then execute onlyonce
+
+
+  // setInterval(function(){
+  //   console.log("bhaskar");
+  // },3000) //after three second execute multiple times
+
+  //difff btw set time out and set interval
+  //set time out execute only once but set interval execute multiple times
+
+  //also this work as a handler there for we need to pass only reference here
+
+  function print (){
+    console.log("hey");
+  }
+
+  const changeMe = setTimeout(print,5000); //you can pass function like this
+  
+  //now if set time out is taking to much time then how can we stop that
+  
+  document.querySelector('#stop').
+  addEventListener('click',function(e){
+    clearTimeout(changeMe); //to stop setTimout function 
+  })
+
+</script>
+</html>

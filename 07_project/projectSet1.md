@@ -167,3 +167,68 @@ function newGame() {
 
 
 ```
+
+## project 5 soltion
+
+```java script
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="body">
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
+        >Youtube channel</a
+      >
+    </nav>
+
+    <h1>Start should change the Background color every second</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script src="chaiaurcode.js"></script>
+  </body>
+
+<script>
+
+//generate random color 
+
+const randomColor = function(){
+   const hex = "0123456789ABCDEF";
+   let color = '#';
+   for(let i=0 ; i<6 ; i++){
+    color += hex[Math.floor(Math.random()*16)]; 
+   }
+   return color;
+};
+
+
+
+let start = document.querySelector('#start');
+let stop = document.querySelector("#stop");
+let body = document.querySelector('.body');
+
+let clr;
+
+start.addEventListener('click',function(e){
+ clr = setInterval(function(){
+    body.style.backgroundColor = randomColor();
+  },1000)
+});
+
+stop.addEventListener('click',function(e){
+  clearInterval(clr);
+  clr = null;
+})
+
+</script>
+</html>
+
+
+```
