@@ -318,3 +318,10 @@ fetch("https://jsonplaceholder.typicode.com/users")
 // Use try...catch	Handles errors gracefully
 // 🔹 Final Thought
 // 🔥 async/await makes JavaScript asynchronous code easier to read, write, and debug. It simplifies working with Promises, removes callback hell, and i
+
+
+
+
+//-if you are browser could'nt able to do request in that case when error arrives that is comes under response
+
+//fatch queue - microtask queue - diff queue for fetch which execute first
