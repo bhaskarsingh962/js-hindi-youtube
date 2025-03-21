@@ -249,26 +249,6 @@ function newGame() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## project 6 soltion
 
 ```java script
